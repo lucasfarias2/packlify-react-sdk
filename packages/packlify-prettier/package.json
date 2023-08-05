@@ -1,5 +1,5 @@
 {
-  "name": "@packlifyg/config-format",
+  "name": "@packlify/config-format",
   "version": "0.0.11-alpha.0",
   "description": "Shared Prettier configuration for Packlify",
   "type": "module",
@@ -15,5 +15,5 @@
     "prettier-plugin-tailwindcss": "^0.4.1"
   },
   "private": false,
-  "gitHead": "899eb25d12e67a8519100f87b0c054f00474fd8e"
+  "gitHead": "c723c4bec8816013a86663e921933925631bae27"
 }
