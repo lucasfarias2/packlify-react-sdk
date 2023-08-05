@@ -1,8 +1,8 @@
 {
-  "name": "@packlify/web",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "packlify-prettier",
+  "version": "1.0.0",
+  "description": "Shared Prettier configuration for Packlify",
+  "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,11 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "lerna": "^6.6.1",
-    "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.4.1"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
