@@ -1,4 +1,4 @@
-import config from './packages/packlify-prettier/config';
+const config = require('./packages/packlify-prettier/config');
 
 module.exports = {
   ...config,
