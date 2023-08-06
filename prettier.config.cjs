@@ -1,5 +1,5 @@
-const config = require('./packages/packlify-prettier/config.cjs');
+const config = require('./packages/config-format')
 
 module.exports = {
-  ...config,
+  ...config
 };
