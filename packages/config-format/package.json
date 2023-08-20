@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "prettier-plugin-tailwindcss": "^0.4.1"
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "prettier-plugin-tailwindcss": "^0.3.0"
   },
   "private": false,
   "gitHead": "c723c4bec8816013a86663e921933925631bae27"
