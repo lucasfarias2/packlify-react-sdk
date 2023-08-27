@@ -9,5 +9,4 @@ module.exports = {
   importOrderGroupNamespaceSpecifiers: true,
   importOrderCaseInsensitive: true,
   plugins: ['@trivago/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
-  pluginSearchDirs: false,
 };

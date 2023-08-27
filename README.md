@@ -4,3 +4,7 @@ Open source package of front-end tools for product web development (Work in prog
 ## Packages
 - Config format: Code formatting rules (Currently prettier).
 - Linting: upcoming
+
+## Support / Requirements
+- React
+- pnpm
