@@ -1,6 +1,6 @@
 {
   "name": "@packlify/config-format",
-  "version": "0.0.14-alpha.0",
+  "version": "0.0.14",
   "description": "Shared Prettier configuration for Packlify",
   "type": "module",
   "main": "index.js",
