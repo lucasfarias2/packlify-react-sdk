@@ -1,6 +1,6 @@
 {
   "name": "packlify-start-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-  },
   "private": false,
   "gitHead": "c723c4bec8816013a86663e921933925631bae27",
   "bin": {

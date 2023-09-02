@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@packlify/config-format':
+        specifier: workspace:*
+        version: link:packages/config-format
+      eslint-config-packlify:
+        specifier: workspace:*
+        version: link:packages/eslint-config-packlify
       lerna:
         specifier: ^6.6.1
         version: 6.6.1
@@ -68,6 +74,8 @@ importers:
       prettier:
         specifier: ^2.8.7
         version: 2.8.7
+
+  packages/start-app: {}
 
 packages:
 
