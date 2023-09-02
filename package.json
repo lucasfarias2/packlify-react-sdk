@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "lerna": "^6.6.1",
+    "eslint": "^8.48.0",
     "@packlify/config-format": "workspace:*",
     "eslint-config-packlify": "workspace:*"
   },
