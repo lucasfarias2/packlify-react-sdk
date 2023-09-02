@@ -13,5 +13,8 @@
   "gitHead": "c723c4bec8816013a86663e921933925631bae27",
   "bin": {
     "packlify-start-app": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }
