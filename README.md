@@ -1,10 +1,13 @@
 # Packlify Web
-Open source package of front-end tools for product web development (Work in progress, alpha state)
+Open source package of front-end tools for product web development (Work in progress, alpha state).
 
 ## Packages
+- Start app
 - Config format: Code formatting rules (Currently prettier).
-- Linting: upcoming
+- Linting rules: eslint-config-packlify
 
 ## Support / Requirements
-- React
+- ESM
 - pnpm
+- React
+- Typescript

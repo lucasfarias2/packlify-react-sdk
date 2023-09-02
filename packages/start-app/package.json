@@ -1,0 +1,19 @@
+{
+  "name": "@packlify/start-app",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "private": false,
+  "gitHead": "c723c4bec8816013a86663e921933925631bae27",
+  "bin": {
+    "packlify-start-app": "./index.js"
+  }
+}

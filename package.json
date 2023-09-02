@@ -11,7 +11,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "lerna": "^6.6.1"
+    "lerna": "^6.6.1",
+    "@packlify/config-format": "workspace:*",
+    "eslint-config-packlify": "workspace:*"
   },
   "engines": {
     "node": ">=18",
