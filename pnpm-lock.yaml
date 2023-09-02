@@ -27,7 +27,7 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(@trivago/prettier-plugin-sort-imports@4.2.0)(prettier@2.8.2)
 
-  packages/config-lint:
+  packages/eslint-config-packlify:
     dependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.2.0
