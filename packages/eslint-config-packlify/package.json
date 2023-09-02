@@ -1,7 +1,7 @@
 {
-  "name": "@packlify/config-lint",
+  "name": "eslint-config-packlify",
   "version": "0.0.3",
-  "main": "index.js",
+  "main": ".eslintrc.cjs",
   "type": "module",
   "author": "Lucas Farias",
   "license": "MIT",
