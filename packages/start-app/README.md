@@ -10,3 +10,7 @@ Generate a pre-configured React application.
 - ESLint + Prettier
 - Vitest
 - Playwright
+- ENV variables
+- Nodemon config
+- Gitignore
+- React Query config + SSR support
