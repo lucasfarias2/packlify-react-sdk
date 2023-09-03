@@ -1,6 +1,6 @@
 {
   "name": "packlify-start-app",
-  "version": "0.0.8-alpha.0",
+  "version": "0.0.8",
   "type": "module",
   "main": "index.js",
   "keywords": [],
@@ -17,10 +17,10 @@
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/node": "^20.5.9",
-    "typescript": "^5.2.2",
-    "vitest-fetch-mock":"*",
     "@vitest/coverage-c8": "*",
-    "vitest": "*"
+    "typescript": "^5.2.2",
+    "vitest": "*",
+    "vitest-fetch-mock": "*"
   },
   "bin": {
     "packlify-start-app": "./dist/index.js"
