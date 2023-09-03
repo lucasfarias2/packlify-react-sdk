@@ -1,8 +1,6 @@
 export default function eslintIgnoreTemplate() {
-  return `
-/node_modules
-/dist
-/**/*.js
-/**/*.cjs
-`;
+  return `/node_modules
+    /dist
+    /**/*.js
+    /**/*.cjs`;
 }
