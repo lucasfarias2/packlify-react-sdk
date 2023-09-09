@@ -1,8 +1,12 @@
 {
   "name": "@packlify/config-build",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.1-alpha.0",
   "type": "module",
   "main": "./dist/index.js",
+  "exports": {
+    "./vite-config-ssr.js": "./dist/vite-config-ssr.js",
+    "./vite-config-client.js": "./dist/vite-config-client.js"
+  },
   "files": [
     "dist"
   ],
@@ -22,8 +26,8 @@
   "private": false,
   "gitHead": "c723c4bec8816013a86663e921933925631bae27",
   "bin": {
-    "packlify-format-write": "./packlify-format-write.js",
-    "packlify-format-check": "./packlify-format-check.js"
+    "packlify-build-ssr": "./dist/cmd/packlify-build-ssr.js",
+    "packlify-build-client": "./dist/cmd/packlify-build-client.js"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
