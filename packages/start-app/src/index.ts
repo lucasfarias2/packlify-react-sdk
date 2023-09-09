@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
 import fs from 'fs';
-import path from 'path';
 import readline from 'readline';
-import url from 'url';
 import createEslintIgnore from './helpers/create-eslintignore.js';
 import createEslintRc from './helpers/create-eslintrc.js';
 import createGitIgnore from './helpers/create-gitignore.js';
 import createNodemon from './helpers/create-nodemon.js';
 import createPackageJson from './helpers/create-package-json.js';
 import createPostcssConfig from './helpers/create-postcss.js';
+import createPrettierConfig from './helpers/create-prettier-config.js';
 import createPrettierIgnore from './helpers/create-prettierignore.js';
 import createTailwindConfig from './helpers/create-tailwind.js';
 import createTsconfigClient from './helpers/create-tsconfig-client.js';
 import createTsconfigServer from './helpers/create-tsconfig-server.js';
-
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+import createViteConfigSsr from './helpers/create-vite-config-ssr.js';
+import createViteConfig from './helpers/create-vite-config.js';
+import createReadme from './helpers/create-readme.js';
 
 const projectNamePattern = /^(?:@(?:[a-z0-9-*~][a-z0-9-*._~]*)?\/)?[a-z0-9-~][a-z0-9-._~]*$/;
 
@@ -49,6 +49,10 @@ const startApp = () => {
         createTsconfigClient(projectName);
         createTsconfigServer(projectName);
         createPrettierIgnore(projectName);
+        createViteConfig(projectName);
+        createViteConfigSsr(projectName);
+        createPrettierConfig(projectName);
+        createReadme(projectName);
       } catch (err) {
         console.log('Error generating project:', err);
         rl.close();

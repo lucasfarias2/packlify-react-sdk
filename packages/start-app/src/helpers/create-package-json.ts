@@ -18,6 +18,8 @@ export default function createPackageJson(projectName: string) {
       '@types/node': '^20.5.9',
       '@packlify/config-format': '0.0.13-alpha.0',
       'eslint-config-packlify': '0.0.4',
+      vite: '^4.4.9',
+      'vite-tsconfig-paths': '^4.2.0',
     },
   };
 

@@ -3,4 +3,5 @@ module.exports = {
   parserOptions: {
     project: './packages/start-app/tsconfig.json',
   },
+  include: ['src'],
 };

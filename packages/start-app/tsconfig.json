@@ -10,5 +10,5 @@
     "skipLibCheck": false
   },
   "include": ["src"],
-  "exclude": ["dist"]
+  "exclude": ["dist", "src/files"]
 }
