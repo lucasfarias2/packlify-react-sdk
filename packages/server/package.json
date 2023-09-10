@@ -1,0 +1,45 @@
+{
+  "name": "@packlify/server",
+  "version": "0.0.1-alpha.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    "./dev-server.js": "./dist/dev-server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "Lucas Farias",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "serialize-javascript": "^6.0.1"
+  },
+  "private": false,
+  "gitHead": "c723c4bec8816013a86663e921933925631bae27",
+  "bin": {
+    "packlify-dev-server": "./dist/cmd/packlify-dev-server.js"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/compression": "^1.7.3",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/serialize-javascript": "^5.0.2",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

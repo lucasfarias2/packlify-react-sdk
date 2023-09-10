@@ -26,7 +26,8 @@
     "packlify-start-app": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/files"
   ],
   "gitHead": "c723c4bec8816013a86663e921933925631bae27"
 }

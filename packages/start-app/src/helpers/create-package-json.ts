@@ -12,7 +12,9 @@ export default function createPackageJson(projectName: string) {
       lint: 'packlify-lint',
     },
     license: 'MIT',
-    dependencies: {},
+    dependencies: {
+      dotenv: '^16.0.3',
+    },
     devDependencies: {
       typescript: '^5.2.2',
       '@types/node': '^20.5.9',
