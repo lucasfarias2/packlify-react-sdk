@@ -8,8 +8,6 @@ declare global {
 
     interface Response {
       renderView: (pageName: string, props?: unknown) => void;
-      loadQueryKeys: (queryKeys: string[]) => Response;
-      queries: Record<string, unknown>;
       isProd?: boolean;
       vite: ViteDevServer;
     }
@@ -32,3 +30,6 @@ declare global {
     device?: IDevice;
   }
 }
+
+export type PacklifyServerResponse = Express.Response;
+export type PacklifyServerRequest = Express.Request;
