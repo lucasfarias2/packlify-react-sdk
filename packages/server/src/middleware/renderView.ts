@@ -1,11 +1,9 @@
 import type { NextFunction, Request, Response } from 'express';
 import fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import path from 'path';
 import serialize from 'serialize-javascript';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const resolve = (p: string) => path.resolve(__dirname, p);
+const resolve = (p: string) => path.resolve(process.cwd(), p);
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -17,8 +15,8 @@ const renderViewMiddleware = (req: Request, res: Response, next: NextFunction) =
       const htmlFromFile = fs.readFileSync(
         resolve(
           isProd
-            ? `../../../react/src/client/entries/${pageName}/${pageName}.html`
-            : `../../../src/client/entries/${pageName}/${pageName}.html`
+            ? `./react/src/client/entries/${pageName}/${pageName}.html`
+            : `./src/client/entries/${pageName}/${pageName}.html`
         ),
         'utf-8'
       );
@@ -27,10 +25,10 @@ const renderViewMiddleware = (req: Request, res: Response, next: NextFunction) =
 
       if (isProd) {
         html = htmlFromFile;
-        render = (await import(resolve(`../../../react/ssr/${pageName}.js`))).render;
+        render = (await import(resolve(`./react/ssr/${pageName}.js`))).render;
       } else {
         html = await res.vite.transformIndexHtml(url, htmlFromFile);
-        render = (await res.vite.ssrLoadModule(`/src/server/entries/${pageName}.tsx`)).render;
+        render = (await res.vite.ssrLoadModule(`./src/server/entries/${pageName}.tsx`)).render;
       }
 
       const serializedData = serialize(props, { isJSON: true });

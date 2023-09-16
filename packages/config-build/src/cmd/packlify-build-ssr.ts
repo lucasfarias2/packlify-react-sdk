@@ -2,7 +2,7 @@
 import chalk from 'chalk';
 import { spawn } from 'child_process';
 
-console.log(chalk.bold.hex('#0e7490')('[packlify] ') + chalk.bold.hex('#be123c')('vite build ssr'));
+console.log(chalk.bold.hex('#0e7490')('[packlify] ') + chalk.bold.hex('#be123c')('build ssr'));
 
 const checkFormat = () => {
   const command = spawn('npx vite build --config ./vite.config.ssr.ts', {

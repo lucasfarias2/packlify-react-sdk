@@ -4,7 +4,8 @@ import deviceMiddleware from './middleware/device.js';
 import renderViewMiddleware from './middleware/renderView.js';
 import getServerOptions from './serverOptions.js';
 
-export default async function withPacklifyServerConfig(app: express.Express) {
+export async function createPacklifyServer(): Promise<express.Express> {
+  const app = express();
   const hmrPort = 3001;
   const isProd = process.env.NODE_ENV === 'production';
   const root = process.cwd();

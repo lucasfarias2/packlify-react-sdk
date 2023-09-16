@@ -15,6 +15,7 @@
     "chalk": "^5.3.0"
   },
   "devDependencies": {
+    "@packlify/config-format": "workspace:^",
     "@types/chalk": "^2.2.0",
     "@types/node": "^20.5.9",
     "@vitest/coverage-c8": "*",
