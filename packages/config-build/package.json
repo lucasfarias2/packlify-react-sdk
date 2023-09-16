@@ -3,13 +3,12 @@
   "version": "0.1.0-alpha.0",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "./vite-config-ssr.js": "./dist/vite-config-ssr.js",
-    "./vite-config-client.js": "./dist/vite-config-client.js"
+    ".": "./dist/index.js",
+    "./vite-config-ssr": "./dist/vite-config-ssr.js",
+    "./vite-config-client": "./dist/vite-config-client.js"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"

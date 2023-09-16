@@ -2,10 +2,10 @@
 import chalk from 'chalk';
 import { spawn } from 'child_process';
 
-console.log(chalk.bold.hex('#0e7490')('[packlify] ') + chalk.bold.hex('#be123c')('dev server'));
+console.log(chalk.bold.hex('#0e7490')('[packlify] ') + chalk.bold.hex('#be123c')('build server'));
 
 const checkFormat = () => {
-  const command = spawn('NODE_ENV=development npx nodemon ./src/index.ts', {
+  const command = spawn('npx tsc -p tsconfig.server.json', {
     cwd: './',
     stdio: 'inherit',
     shell: true,

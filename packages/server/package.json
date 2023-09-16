@@ -5,7 +5,9 @@
   "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js",
-    "./dev-server.js": "./dist/dev-server.js"
+    "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
+    "./packlify-build-server.js": "./dist/packlify-build-server.js",
+    "./packlify-server.js": "./dist/packlify-server.js"
   },
   "files": [
     "dist"
@@ -28,8 +30,9 @@
   "private": false,
   "gitHead": "c723c4bec8816013a86663e921933925631bae27",
   "bin": {
-    "packlify-dev-server": "./dist/cmd/dev-server.js",
-    "packlify-server": "./dist/cmd/server.js"
+    "packlify-dev-server": "./dist/cmd/packlify-dev-server.js",
+    "packlify-server": "./dist/cmd/packlify-server.js",
+    "packlify-build-server": "./dist/cmd/packlify-build-server.js"
   },
   "devDependencies": {
     "@packlify/config-format": "workspace:^",
