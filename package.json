@@ -23,8 +23,5 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": false,
-  "devDependencies": {
-    "prettier": "^3.0.3"
-  }
+  "private": false
 }
