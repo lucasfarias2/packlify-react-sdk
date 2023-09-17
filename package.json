@@ -16,6 +16,10 @@
     "@packlify/config-format": "workspace:*",
     "eslint-config-packlify": "workspace:*"
   },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  },
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"

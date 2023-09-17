@@ -17,7 +17,7 @@ export default function viteSsrBuildConfig(entryPoints: IEntryPoint[]): ReturnTy
             acc[entry.name.toLowerCase()] = resolve(process.cwd(), entry.path);
             return acc;
           }, {} as Record<string, string>),
-        },
+        }
       },
     },
   };
