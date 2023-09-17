@@ -1,6 +1,6 @@
 {
   "name": "@packlify/server",
-  "version": "0.2.3-alpha.0",
+  "version": "0.2.4-alpha.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -47,7 +47,6 @@
     "@types/serialize-javascript": "^5.0.2",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-tsconfig-paths": "^4.2.0"
