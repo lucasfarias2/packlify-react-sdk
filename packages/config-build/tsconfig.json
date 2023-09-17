@@ -12,5 +12,5 @@
     "declarationDir": "./dist"
   },
   "include": ["/**/*.ts", "/**/*.tsx"],
-  "exclude": ["dist"]
+  "exclude": ["node_modules", "dist"]
 }

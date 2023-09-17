@@ -9,8 +9,8 @@
   ],
   "exports": {
     ".": "./dist/index.js",
-    "./vite-config-ssr": "./dist/vite-config-ssr.js",
-    "./vite-config-client": "./dist/vite-config-client.js"
+    "./vite-config-ssr": "./dist/src/vite-config-ssr.js",
+    "./vite-config-client": "./dist/src/vite-config-client.js"
   },
   "scripts": {
     "build": "tsc",
@@ -31,7 +31,7 @@
   "private": false,
   "gitHead": "c723c4bec8816013a86663e921933925631bae27",
   "bin": {
-    "packlify-build-ssr": "./dist/cmd/packlify-build-ssr.js",
-    "packlify-build-client": "./dist/cmd/packlify-build-client.js"
+    "packlify-build-ssr": "./dist/src/cmd/packlify-build-ssr.js",
+    "packlify-build-client": "./dist/src/cmd/packlify-build-client.js"
   }
 }
