@@ -25,7 +25,7 @@ const renderViewMiddleware = (req: Request, res: Response, next: NextFunction) =
 
       if (isProd) {
         html = htmlFromFile;
-        render = (await import(resolve(`./dist/react/ssr/${pageName}.js`))).render;
+        render = (await import(/* @vite-ignore */ resolve(`./dist/react/ssr/${pageName}.js`))).render;
       } else {
         html = await res.vite.transformIndexHtml(url, htmlFromFile);
         render = (await res.vite.ssrLoadModule(`./src/server/entries/${pageName}.tsx`)).render;

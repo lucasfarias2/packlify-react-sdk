@@ -6,7 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default function viteSsrBuildConfig(entryPoints: IEntryPoint[]): ReturnType<typeof defineConfig> {
   return {
     plugins: [react(), tsconfigPaths()],
-
     build: {
       outDir: './dist/react/ssr',
       emptyOutDir: true,
