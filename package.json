@@ -11,10 +11,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "lerna": "^6.6.1",
-    "eslint": "^8.48.0",
     "@packlify/config-format": "workspace:*",
-    "eslint-config-packlify": "workspace:*"
+    "eslint": "^8.48.0",
+    "eslint-config-packlify": "workspace:*",
+    "lerna": "^6.6.1"
   },
   "engines": {
     "node": ">=18",
@@ -23,5 +23,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
 }

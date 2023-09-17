@@ -10,7 +10,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
-  plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint', 'prettier'],
+  plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint', 'prettier', 'simple-import-sort'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
@@ -33,8 +33,8 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
       typescript: {
         alwaysTryTypes: true,
@@ -50,6 +50,8 @@ module.exports = {
     'prettier/prettier': 'warn',
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   ignorePatterns: ['node_modules', 'build', 'dist', '/**/*.js', '/**/*.cjs'],
 };

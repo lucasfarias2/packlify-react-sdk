@@ -8,11 +8,11 @@ declare const window: IWindow;
 export function hydrate(Component: React.FunctionComponent<any> | React.ComponentClass<any>, withRouter = false) {
   const props = window.__PRELOADED_STATE__;
 
-  const component = <Component {...props} />;
+  const component = React.createElement(Component, props);
   const domElement = document.getElementById('root') as HTMLElement;
 
   if (withRouter) {
-    hydrateRoot(domElement, <BrowserRouter>{component}</BrowserRouter>);
+    hydrateRoot(domElement, React.createElement(BrowserRouter, null, component));
   } else {
     hydrateRoot(domElement, component);
   }

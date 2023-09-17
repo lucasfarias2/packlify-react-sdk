@@ -10,28 +10,16 @@ interface RenderComponentProps {
   withRouter?: boolean;
 }
 
-export function renderComponent({
-  Component,
-  url,
-  props = {},
-  withRouter = false
-}: RenderComponentProps): string {
+export function renderComponent({ Component, url, props = {}, withRouter = false }: RenderComponentProps): string {
   const component = React.createElement(Component, props);
 
   if (withRouter) {
-      const routerProps = {
-          location: url,
-          children: component
-      };
+    const routerProps = {
+      location: url,
+      children: component,
+    };
 
-      console.log("asd");
-      try {
-        console.log('With router so', renderToString(React.createElement(StaticRouter, routerProps)));
-
-      } catch (e) {
-        console.log('With router catch', e);
-      }
-      return renderToString(React.createElement(StaticRouter, routerProps));
+    return renderToString(React.createElement(StaticRouter, routerProps))
   }
 
   return renderToString(component);
