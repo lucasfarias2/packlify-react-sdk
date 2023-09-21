@@ -121,7 +121,7 @@ importers:
         version: 6.0.1
     devDependencies:
       '@packlify/config-format':
-        specifier: workspace:^
+        specifier: ^0.1.0
         version: link:../config-format
       '@types/compression':
         specifier: ^1.7.3
@@ -4498,6 +4498,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     dev: false
