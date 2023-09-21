@@ -30,14 +30,14 @@
     "serialize-javascript": "^6.0.1"
   },
   "private": false,
-  "gitHead": "c723c4bec8816013a86663e921933925631bae27",
+  "gitHead": "3507d8c6997d2da1d892f4d7191244abe98649ea",
   "bin": {
     "packlify-dev-server": "./dist/cmd/packlify-dev-server.js",
     "packlify-server": "./dist/cmd/packlify-server.js",
     "packlify-build-server": "./dist/cmd/packlify-build-server.js"
   },
   "devDependencies": {
-    "@packlify/config-format": "workspace:^",
+    "@packlify/config-format": "^0.1.0",
     "@types/compression": "^1.7.3",
     "@types/express": "^4.17.17",
     "@types/node": "^20.5.9",
