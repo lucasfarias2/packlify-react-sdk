@@ -11,14 +11,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@packlify/config-format": "workspace:*",
+    "@packlify/config-format": "*",
     "eslint": "^8.48.0",
-    "eslint-config-packlify": "workspace:*",
-    "lerna": "^6.6.1"
+    "eslint-config-packlify": "*",
+    "lerna": "^7.3.0"
   },
   "engines": {
     "node": ">=18",
-    "pnpm": ">=8"
+    "npm": ">=8"
   },
   "workspaces": [
     "packages/*"

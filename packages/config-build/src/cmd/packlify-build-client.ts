@@ -13,7 +13,7 @@ const checkFormat = () => {
 
   command.on('close', code => {
     if (code !== 0) {
-      console.error(`format-check exited with code ${code}`);
+      console.error(`build client exited with code ${code}`);
       process.exit(1);
     }
   });

@@ -6,7 +6,7 @@ import { spawn } from 'child_process';
 console.log(chalk.bold.hex('#0e7490')('Packlify: ') + chalk.bold.hex('#be123c')('lint'));
 
 const lint = () => {
-  const command = spawn('pnpx eslint "src/**/*.{js,jsx,ts,tsx}"', {
+  const command = spawn('npx eslint "src/**/*.{js,jsx,ts,tsx}"', {
     cwd: './',
     stdio: 'inherit',
     shell: true,

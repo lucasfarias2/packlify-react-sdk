@@ -11,6 +11,6 @@ Open source package of front-end tools for product web development (Work in prog
 
 ## Support / Requirements
 - ESM
-- pnpm
+- npm
 - React
 - Typescript
