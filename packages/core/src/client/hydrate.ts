@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 declare const window: IWindow;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function hydrate(Component: React.FunctionComponent<any> | React.ComponentClass<any>, withRouter = false) {
+export default function hydrate(Component: React.FunctionComponent<any> | React.ComponentClass<any>, withRouter = false) {
   const props = window.__PRELOADED_STATE__;
   
   const component = React.createElement(Component, props);

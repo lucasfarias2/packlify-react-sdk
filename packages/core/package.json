@@ -1,15 +1,17 @@
 {
-  "name": "@packlify/server",
-  "version": "1.0.0-alpha.0",
+  "name": "@packlify/core",
+  "version": "0.0.1-alpha.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
-    "./server": "./dist/server.js",
-    "./client": "./dist/client.js",
+    "./server": "./dist/server/index.js",
+    "./client": "./dist/client/index.js",
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
+    "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
+    "./packlify-build-client.js": "./dist/packlify-build-client.js",
     "./packlify-server.js": "./dist/packlify-server.js"
   },
   "files": [
@@ -36,7 +38,9 @@
   "bin": {
     "packlify-dev-server": "./dist/cmd/packlify-dev-server.js",
     "packlify-server": "./dist/cmd/packlify-server.js",
-    "packlify-build-server": "./dist/cmd/packlify-build-server.js"
+    "packlify-build-server": "./dist/cmd/packlify-build-server.js",
+    "packlify-build-ssr": "./dist/cmd/packlify-build-ssr.js",
+    "packlify-build-client": "./dist/cmd/packlify-build-client.js"
   },
   "devDependencies": {
     "@packlify/config-format": "^0.1.1",
