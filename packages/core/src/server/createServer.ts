@@ -4,7 +4,7 @@ import getServerOptions from '../config/serverOptions.js';
 import deviceMiddleware from './middleware/device.js';
 import renderViewMiddleware from './middleware/renderView.js';
 
-export default async function createServer(): Promise<express.Express> {
+export async function createServer(): Promise<express.Express> {
   const app = express();
   const hmrPort = 3001;
   const isProd = process.env.NODE_ENV === 'production';

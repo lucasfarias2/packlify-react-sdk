@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import type { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default function viteSsrBuildConfig(entryPoints: IEntryPoint[]): ReturnType<typeof defineConfig> {
+export function viteConfigSsr(entryPoints: IEntryPoint[]): ReturnType<typeof defineConfig> {
   return {
     plugins: [react(), tsconfigPaths()],
     build: {

@@ -10,7 +10,7 @@ interface RenderComponentProps {
   withRouter?: boolean;
 }
 
-export default function renderComponent({ Component, url, props = {}, withRouter = false }: RenderComponentProps): string {
+export function renderComponent({ Component, url, props = {}, withRouter = false }: RenderComponentProps): string {
   const component = React.createElement(Component, props);
 
   if (withRouter) {

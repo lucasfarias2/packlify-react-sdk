@@ -1,4 +1,4 @@
-import viteConfigClient from './viteConfigClient.js';
-import viteConfigSsr from './viteConfigSsr.js';
+import { viteConfigSsr } from './viteConfigSsr.js';
+import { viteConfigClient } from './viteConfigClient';
 
 export { viteConfigClient, viteConfigSsr };
