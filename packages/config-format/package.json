@@ -16,7 +16,7 @@
     "prettier-plugin-tailwindcss": "^0.3.0"
   },
   "private": false,
-  "gitHead": "c723c4bec8816013a86663e921933925631bae27",
+  "gitHead": "63b877bd309b2a8a02d7f585a38eab189920b5ad",
   "bin": {
     "packlify-format-write": "./packlify-format-write.js",
     "packlify-format-check": "./packlify-format-check.js"

@@ -22,5 +22,6 @@
   },
   "bin": {
     "packlify-lint": "./packlify-lint.js"
-  }
+  },
+  "gitHead": "63b877bd309b2a8a02d7f585a38eab189920b5ad"
 }
