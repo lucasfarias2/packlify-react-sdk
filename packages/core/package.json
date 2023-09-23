@@ -1,14 +1,16 @@
 {
   "name": "@packlify/core",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
-    "./client": "./dist/client.js",
+    "./client": "./dist/client/index.js",
     "./config": "./dist/config/index.js",
     "./config/*": "./dist/config/*",
+    "./server": "./dist/server/index.js",
+    "./server/*": "./dist/server/*",
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
     "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
