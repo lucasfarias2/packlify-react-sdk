@@ -10,7 +10,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended'
   ],
-  plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint', 'prettier', 'simple-import-sort'],
+  plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
@@ -49,9 +49,7 @@ module.exports = {
     '@typescript-eslint/await-thenable': 0,
     'prettier/prettier': 'warn',
     'arrow-body-style': 'off',
-    'prefer-arrow-callback': 'off',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
+    'prefer-arrow-callback': 'off'
   },
   ignorePatterns: ['node_modules', 'build', 'dist', '/**/*.js', '/**/*.cjs'],
 };
