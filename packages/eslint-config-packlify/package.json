@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-packlify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": ".eslintrc.cjs",
   "type": "module",
   "author": "Lucas Farias",

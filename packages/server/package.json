@@ -1,6 +1,6 @@
 {
   "name": "@packlify/server",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -37,7 +37,7 @@
     "packlify-build-server": "./dist/cmd/packlify-build-server.js"
   },
   "devDependencies": {
-    "@packlify/config-format": "^0.1.0",
+    "@packlify/config-format": "^0.1.1",
     "@types/compression": "^1.7.3",
     "@types/express": "^4.17.17",
     "@types/node": "^20.5.9",

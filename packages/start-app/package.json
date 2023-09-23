@@ -1,6 +1,6 @@
 {
   "name": "packlify-start-app",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "index.js",
   "keywords": [],
@@ -15,7 +15,7 @@
     "chalk": "^5.3.0"
   },
   "devDependencies": {
-    "@packlify/config-format": "*",
+    "@packlify/config-format": "^0.1.1",
     "@types/node": "^20.5.9",
     "@vitest/coverage-c8": "*",
     "typescript": "^5.2.2",
