@@ -15,8 +15,7 @@
     "eslint": "^8.48.0",
     "eslint-config-packlify": "*",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "lerna": "^7.3.0"
+    "eslint-plugin-prettier": "^5.0.0"
   },
   "engines": {
     "node": ">=18",
