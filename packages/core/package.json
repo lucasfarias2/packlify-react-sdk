@@ -34,7 +34,7 @@
     "serialize-javascript": "^6.0.1"
   },
   "private": false,
-  "gitHead": "3507d8c6997d2da1d892f4d7191244abe98649ea",
+  "gitHead": "7129828c5b2e8be3e14c920e94f790341595f687",
   "bin": {
     "packlify-dev-server": "./dist/cmd/packlify-dev-server.js",
     "packlify-server": "./dist/cmd/packlify-server.js",
