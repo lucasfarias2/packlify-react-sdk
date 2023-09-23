@@ -3,5 +3,5 @@ module.exports = {
   printWidth: 120,
   arrowParens: 'avoid',
   singleQuote: true,
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
 };

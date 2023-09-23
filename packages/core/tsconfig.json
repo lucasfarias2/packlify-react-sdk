@@ -3,6 +3,7 @@
     "outDir": "dist",
     "target": "ES2022",
     "module": "ES2022",
+    "rootDir": "./src",
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "strict": true,

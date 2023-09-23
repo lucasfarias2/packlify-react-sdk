@@ -5,7 +5,6 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
     "./server": "./dist/server/index.js",
     "./client": "./dist/client/index.js",
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",

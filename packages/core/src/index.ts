@@ -1,3 +1,3 @@
-import { PacklifyServerRequest, PacklifyServerResponse } from './types.js';
+import { PacklifyServerRequest, PacklifyServerResponse } from './types';
 
 export { PacklifyServerResponse, PacklifyServerRequest };

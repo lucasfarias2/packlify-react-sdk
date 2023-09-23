@@ -8,7 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint', 'prettier', 'simple-import-sort'],
   parser: '@typescript-eslint/parser',
