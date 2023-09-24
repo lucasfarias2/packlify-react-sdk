@@ -6,10 +6,9 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
-    "./config": "./dist/config/index.js",
-    "./client": "./dist/client/index.js",
-    "./server": "./dist/server/index.js",
-    "./types": "./dist/types/index.js",
+    "./hydrate.js": "./dist/hydrate.js",
+    "./viteConfigClient.js": "./dist/viteConfigClient.js",
+    "./viteConfigSsr.js": "./dist/viteCOnfigSsr.js",
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
     "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
