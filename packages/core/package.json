@@ -1,6 +1,6 @@
 {
   "name": "@packlify/core",
-  "version": "0.0.3-alpha.6",
+  "version": "0.0.3-alpha.7",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
