@@ -24,8 +24,8 @@ export default function createPackageJson(projectName: string) {
     },
     license: 'MIT',
     dependencies: {
-      '@packlify/client': '^0.0.0-alpha.1',
-      '@packlify/core': '^0.0.4',
+      '@packlify/client': '1.0.0',
+      '@packlify/core': '1.0.0',
       axios: '^1.2.3',
       classnames: '^2.3.2',
       'cookie-parser': '^1.4.6',
@@ -36,8 +36,8 @@ export default function createPackageJson(projectName: string) {
       'react-router-dom': '^6.15.0',
     },
     devDependencies: {
-      '@packlify/config-build': '^0.0.1-alpha.0',
-      '@packlify/config-format': '^0.1.2-alpha.1',
+      '@packlify/config-build': '1.0.0',
+      '@packlify/config-format': '1.0.0',
       '@types/cookie-parser': '^1.4.3',
       '@types/express': '^4.17.15',
       '@types/node': '^18.11.18',
