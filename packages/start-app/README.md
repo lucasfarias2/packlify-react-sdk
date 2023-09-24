@@ -1,4 +1,4 @@
-# [Packlify](https://packlify.com) start app
+# packlify-start-app
 A part of the Packlify Web SDK ecosystem, the packlify-start-app package helps you quickly initialize a new React-based project with a pre-set architecture, saving you from boilerplate setup.
 
 ## Table of Contents
