@@ -5,6 +5,20 @@ Open source package of front-end tools for product web development.
 - Status: Early alpha.
 - PLEASE: Leave any feedback as its highly appreciated.
 
+## Table of Contents
+
+- [Description](#description)
+- [Stack](#stack)
+- [Getting Started](#getting-started)
+- [Packages](#packages)
+  - [@packlify/core](#packlifycore)
+  - [@packlify/client](#packlifyclient)
+  - [@packlify/config-build](#packlifyconfig-build)
+  - [@packlify/config-format](#packlifyconfig-format)
+  - [eslint-config-packlify](#eslint-config-packlify)
+  - [packlify-start-app](#packlify-start-app)
+
+
 ## Description
 This app is intended for creating multiple react projects under the same highly customizable and scalable architecture without the need of repeating boilerplate. More info about Packlify's modules [here](https://github.com/shopinpack/packlify-web).
 
