@@ -1,24 +1,52 @@
 {
   "name": "@packlify/core",
-  "version": "0.0.3-alpha.4",
+  "version": "0.0.3-alpha.5",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./hydrate.js": "./dist/hydrate.js",
-    "./viteConfigClient.js": "./dist/viteConfigClient.js",
-    "./viteConfigSsr.js": "./dist/viteCOnfigSsr.js",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./server": {
+      "import": {
+        "types": "./dist/server/index.d.ts",
+        "default": "./dist/server/index.js"
+      }
+    },
+    "./client": {
+      "import": {
+        "types": "./dist/client/index.d.ts",
+        "default": "./dist/client/index.js"
+      }
+    },
+    "./config": {
+      "import": {
+        "types": "./dist/config/index.d.ts",
+        "default": "./dist/config/index.js"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types.d.ts",
+        "default": "./dist/types.js"
+      }
+    },
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
     "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
     "./packlify-build-client.js": "./dist/cmd/packlify-build-client.js",
-    "./packlify-server.js": "./dist/packlify-server.js"
+    "./packlify-server.js": "./dist/packlify-server.js",
+    "./package.json": "./package.json"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
@@ -52,6 +80,7 @@
     "@types/serialize-javascript": "^5.0.2",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "rimraf": "^5.0.1",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-tsconfig-paths": "^4.2.0"

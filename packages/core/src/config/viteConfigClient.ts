@@ -14,10 +14,13 @@ export function viteConfigClient(entryPoints: IEntryPoint[]): ReturnType<typeof 
       rollupOptions: {
         // plugins: [analyze()],
         input: {
-          ...entryPoints.reduce((acc, entry) => {
-            acc[entry.name.toLowerCase()] = resolve(process.cwd(), entry.path);
-            return acc;
-          }, {} as Record<string, string>),
+          ...entryPoints.reduce(
+            (acc, entry) => {
+              acc[entry.name.toLowerCase()] = resolve(process.cwd(), entry.path);
+              return acc;
+            },
+            {} as Record<string, string>
+          ),
         },
       },
     },

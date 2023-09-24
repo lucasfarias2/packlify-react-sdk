@@ -1,8 +1,8 @@
 import express from 'express';
 import type { ViteDevServer } from 'vite';
 import getServerOptions from '../config/serverOptions.js';
-import deviceMiddleware from './middleware/device.js';
-import renderViewMiddleware from './middleware/renderView.js';
+import deviceMiddleware from '../server/middleware/device.js';
+import renderViewMiddleware from '../server/middleware/renderView.js';
 
 export async function createServer(): Promise<express.Express> {
   const app = express();

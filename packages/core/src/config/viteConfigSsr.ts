@@ -13,10 +13,13 @@ export function viteConfigSsr(entryPoints: IEntryPoint[]): ReturnType<typeof def
       sourcemap: true,
       rollupOptions: {
         input: {
-          ...entryPoints.reduce((acc, entry) => {
-            acc[entry.name.toLowerCase()] = resolve(process.cwd(), entry.path);
-            return acc;
-          }, {} as Record<string, string>),
+          ...entryPoints.reduce(
+            (acc, entry) => {
+              acc[entry.name.toLowerCase()] = resolve(process.cwd(), entry.path);
+              return acc;
+            },
+            {} as Record<string, string>
+          ),
         },
       },
     },
