@@ -11,7 +11,7 @@
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
     "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
-    "./packlify-build-client.js": "./dist/cmd/packlify-build-client.js",
+    "./packlify-build-client.js": "./dist/packlify-build-client.js",
     "./packlify-server.js": "./dist/packlify-server.js",
     "./package.json": "./package.json"
   },
