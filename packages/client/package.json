@@ -1,11 +1,11 @@
 {
   "name": "@packlify/client",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-alpha.1",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
-    "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
-    "./packlify-build-client.js": "./dist/packlify-build-client.js"
+    "./packlify-build-ssr.js": "./dist/cmd/packlify-build-ssr.js",
+    "./packlify-build-client.js": "./dist/cmd/packlify-build-client.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
