@@ -1,6 +1,8 @@
 # packlify-start-app
 A part of the Packlify Web SDK ecosystem, the packlify-start-app package helps you quickly initialize a new React-based project with a pre-set architecture, saving you from boilerplate setup.
 
+- **WARNING: packlify-dev-server: For now its only compatible with Node between 16 and 18 (LTS).**
+
 ## Table of Contents
 - [Installation](#installation)
 - [Features](#features)
