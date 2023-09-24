@@ -1,6 +1,6 @@
 {
   "name": "@packlify/client",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.0-alpha.0",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
