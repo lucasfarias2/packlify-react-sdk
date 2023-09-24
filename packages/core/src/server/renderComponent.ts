@@ -19,7 +19,7 @@ export function renderComponent({ Component, url, props = {}, withRouter = false
       children: component,
     };
 
-    return renderToString(React.createElement(StaticRouter, routerProps))
+    return renderToString(React.createElement(StaticRouter, routerProps));
   }
 
   return renderToString(component);
