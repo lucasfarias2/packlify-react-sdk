@@ -18,6 +18,7 @@ import createViteConfig from './helpers/create-vite-config.js';
 import createReadme from './helpers/create-readme.js';
 import createEnvExample from './helpers/create-env-example.js';
 import createViteEnv from './helpers/create-vite-env.js';
+import createSrcFiles from './helpers/create-src-files.js';
 
 const projectNamePattern = /^(?:@(?:[a-z0-9-*~][a-z0-9-*._~]*)?\/)?[a-z0-9-~][a-z0-9-._~]*$/;
 
@@ -57,6 +58,7 @@ const startApp = () => {
         createReadme(projectName);
         createEnvExample(projectName);
         createViteEnv(projectName);
+        createSrcFiles(projectName);
       } catch (err) {
         console.log('Error generating project:', err);
         rl.close();

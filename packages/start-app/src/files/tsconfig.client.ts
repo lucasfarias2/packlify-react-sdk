@@ -15,13 +15,11 @@ export default function tsconfigClientTemplate() {
           '@/*': ['src/*'],
           '@/components/*': ['src/shared/components/*'],
         },
-        types: ['react', 'react-dom'],
       },
       include: ['**/*.ts', '**/*.tsx'],
       exclude: ['node_modules', 'dist'],
       'ts-node': {
         esm: true,
-        swc: true,
       },
     },
     null,

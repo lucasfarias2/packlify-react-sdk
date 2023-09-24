@@ -19,7 +19,6 @@ export default function tsconfigServerTemplate() {
       exclude: ['node_modules', 'dist'],
       'ts-node': {
         esm: true,
-        swc: true,
         require: ['tsconfig-paths/register', 'dotenv/config'],
       },
     },

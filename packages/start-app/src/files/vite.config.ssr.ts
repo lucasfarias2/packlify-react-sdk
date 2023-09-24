@@ -1,4 +1,4 @@
-import viteConfigSsr from '@packlify/config-build/vite-config-ssr.js';
+import { viteConfigSsr } from '@packlify/config-build';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
