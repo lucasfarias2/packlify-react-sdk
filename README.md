@@ -17,6 +17,7 @@ Open source package of front-end tools for product web development.
   - [@packlify/config-format](#packlifyconfig-format)
   - [eslint-config-packlify](#eslint-config-packlify)
   - [packlify-start-app](#packlify-start-app)
+- [Contact](#contact)
 
 
 ## Description
@@ -89,3 +90,7 @@ This package includes functions for setting up:
 #### Bin files:
 - `packlify-start-app`: Creates a project folder with pre-set React frontend app using Packlify's modules.
 
+## Contact
+Lucas Farias
+lukf95@gmail.com
+[LinkedIn](https://www.linkedin.com/in/lucasfar/) - [GitHub](https://www.github.com/lucasfarias2)
