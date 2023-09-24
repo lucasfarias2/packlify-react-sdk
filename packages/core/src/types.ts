@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 import type { ViteDevServer } from 'vite';
-import type { Express } from 'express';
+import type { Express, Response as ExpressResponse } from 'express';
 
 declare global {
   namespace Express {
@@ -16,7 +16,7 @@ declare global {
   }
 }
 
-type TDeviceType = 'mobile' | 'desktop';
+export type TDeviceType = 'mobile' | 'desktop';
 
 export type IWindow = typeof window & {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -34,5 +34,5 @@ export interface IDevice {
 }
 
 export type PacklifyServer = Express;
-export type PacklifyServerResponse = Express.Response;
+export type PacklifyServerResponse = ExpressResponse;
 export type PacklifyServerRequest = Express.Request;
