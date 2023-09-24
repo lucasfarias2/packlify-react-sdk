@@ -19,6 +19,7 @@ import createReadme from './helpers/create-readme.js';
 import createEnvExample from './helpers/create-env-example.js';
 import createViteEnv from './helpers/create-vite-env.js';
 import createSrcFiles from './helpers/create-src-files.js';
+import createNvmrc from './helpers/create-nvmrc.js';
 
 const projectNamePattern = /^(?:@(?:[a-z0-9-*~][a-z0-9-*._~]*)?\/)?[a-z0-9-~][a-z0-9-._~]*$/;
 
@@ -58,6 +59,7 @@ const startApp = () => {
         createReadme(projectName);
         createEnvExample(projectName);
         createViteEnv(projectName);
+        createNvmrc(projectName);
         createSrcFiles(projectName);
       } catch (err) {
         console.log('Error generating project:', err);
@@ -65,8 +67,9 @@ const startApp = () => {
       }
 
       console.log(`Project ${projectName} has been created!`);
-      console.log("Please run 'npm install' to install the dependencies.");
-      console.log("Then run 'npm run dev' to start the development server.");
+      console.log(`Please run ${chalk.bold('cd ' + projectName)} to enter the project directory.`);
+      console.log(`Then run ${chalk.bold('npm install')} to install the dependencies.`);
+      console.log(`Finally run ${chalk.bold('npm run dev')} to start the development server.`);
       console.log('Happy coding!');
     } else {
       console.log('Please provide a valid project name!');
