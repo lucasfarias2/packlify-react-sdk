@@ -65,6 +65,9 @@ const startApp = () => {
       }
 
       console.log(`Project ${projectName} has been created!`);
+      console.log("Please run 'npm install' to install the dependencies.");
+      console.log("Then run 'npm run dev' to start the development server.");
+      console.log('Happy coding!');
     } else {
       console.log('Please provide a valid project name!');
     }
