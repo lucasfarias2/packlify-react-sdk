@@ -1,38 +1,13 @@
 {
   "name": "@packlify/core",
-  "version": "0.0.3-alpha.5",
+  "version": "0.0.3-alpha.6",
   "type": "module",
   "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
-    },
-    "./server": {
-      "import": {
-        "types": "./dist/server/index.d.ts",
-        "default": "./dist/server/index.js"
-      }
-    },
-    "./client": {
-      "import": {
-        "types": "./dist/client/index.d.ts",
-        "default": "./dist/client/index.js"
-      }
-    },
-    "./config": {
-      "import": {
-        "types": "./dist/config/index.d.ts",
-        "default": "./dist/config/index.js"
-      }
-    },
-    "./types": {
-      "import": {
-        "types": "./dist/types.d.ts",
-        "default": "./dist/types.js"
-      }
-    },
+    ".": "./dist/index.js",
+    "./server": "./dist/server/index.js",
+    "./config": "./dist/config/index.js",
+    "./client": "./dist/client/index.js",
+    "./types": "./dist/types.js",
     "./packlify-dev-server.js": "./dist/packlify-dev-server.js",
     "./packlify-build-server.js": "./dist/packlify-build-server.js",
     "./packlify-build-ssr.js": "./dist/packlify-build-ssr.js",
