@@ -63,3 +63,7 @@ npx packlify-build-client
 - React 18.2.0 or higher
 - react-router-dom 6.15.0 or higher
 
+## Contact
+Lucas Farias
+lukf95@gmail.com
+[LinkedIn](https://www.linkedin.com/in/lucasfar/) - [GitHub](https://www.github.com/lucasfarias2)
