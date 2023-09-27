@@ -1,6 +1,6 @@
 {
   "name": "packlify-start-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "index.js",
   "keywords": [],
@@ -12,8 +12,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "chalk": "^5.3.0",
-    "packlify-start-app": "file:"
+    "chalk": "^5.3.0"
   },
   "devDependencies": {
     "@packlify/config-format": "^0.1.2-alpha.0",
@@ -24,7 +23,7 @@
     "vitest-fetch-mock": "*"
   },
   "bin": {
-    "packlify-start-app": "dist/index.js"
+    "packlify-start-app": "./dist/index.js"
   },
   "files": [
     "dist",
