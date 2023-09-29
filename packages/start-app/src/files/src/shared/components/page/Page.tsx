@@ -1,7 +1,7 @@
 import { DeviceContext } from '@/shared/contexts/DeviceContext';
 import classnames from 'classnames';
 
-const Page = ({ children, className, initialState, device, withNavbar = false, darkMode = false }: IProps) => {
+const Page = ({ children, className, initialState, device, darkMode = false }: IProps) => {
   return (
     <DeviceContext.Provider value={{ type: device?.type }}>
       <main className={classnames(className, { dark: darkMode })}>{children}</main>
