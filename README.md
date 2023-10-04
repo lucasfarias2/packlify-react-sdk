@@ -1,3 +1,5 @@
+<img width="372" alt="Screenshot 2023-10-01 at 22 45 10" src="https://github.com/shopinpack/packlify-web/assets/19575942/1b5d6acb-5b71-4244-803d-7c5748b51e00">
+
 # Packlify Web SDK
 Open source package of front-end tools for product web development.
 
