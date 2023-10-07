@@ -1,7 +1,7 @@
 import type { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import axios from 'axios';
 
-const mocksAdapter =
+export const serverMocksAdapter =
   (mocksConfig: { allowedUrls: string[] }) =>
   async (config: InternalAxiosRequestConfig): Promise<AxiosResponse> => {
     const configDefaultAdapter = { ...config, adapter: axios.defaults.adapter };
@@ -39,5 +39,3 @@ const mocksAdapter =
 
     return axiosInstanceWithoutMocks.request(configDefaultAdapter);
   };
-
-export default mocksAdapter;
