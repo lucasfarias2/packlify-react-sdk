@@ -7,10 +7,12 @@ const mocksRouter = express.Router();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const projectRoot = path.resolve(__dirname, '../../');
+const projectRoot = path.resolve(__dirname, '../../../');
 
 mocksRouter.get('/', async (req, res) => {
-  const urlToMock = req.query.urlToMock as string;
+  const presetUrl = req.query.urlToMock as string;
+  const url = new URL(presetUrl);
+  const urlToMock = url.pathname;
   const filePathFragments = urlToMock.split('/').filter(Boolean);
 
   const fileName = `${filePathFragments.pop()}.json`;
@@ -34,7 +36,9 @@ mocksRouter.get('/', async (req, res) => {
 });
 
 mocksRouter.post('/', async (req, res) => {
-  const urlToMock = req.body.urlToMock as string;
+  const presetUrl = req.body.urlToMock as string;
+  const url = new URL(presetUrl);
+  const urlToMock = url.pathname;
   const responseContent = req.body.response;
   const filePathFragments = urlToMock.split('/').filter(Boolean);
 
