@@ -1,6 +1,6 @@
-import Page from '@/shared/components/page/Page';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Page from '@/shared/components/page/Page';
 
 const Router = (props: IViewProps) => {
   const { device, initialState } = props;

@@ -23,9 +23,9 @@ function copyFolderSync(src: string, dest: string) {
   }
 }
 
-export default function createSrcFiles(projectName: string) {
-  const srcFolder = path.join(__dirname, '../../src/files/src');
-  const tgtFolder = path.join(process.cwd(), projectName, 'src');
+export default function copyFiles(projectName: string) {
+  const srcFolder = path.join(__dirname, '../../src/files');
+  const tgtFolder = path.join(process.cwd(), projectName, '.');
 
   copyFolderSync(srcFolder, tgtFolder);
 }

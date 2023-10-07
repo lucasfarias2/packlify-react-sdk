@@ -1,5 +1,5 @@
-import { DeviceContext } from '@/shared/contexts/DeviceContext';
 import classnames from 'classnames';
+import { DeviceContext } from '@/shared/contexts/DeviceContext';
 
 const Page = ({ children, className, initialState, device, darkMode = false }: IProps) => {
   return (

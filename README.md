@@ -17,6 +17,11 @@ Open source package of front-end tools for product web development.
   - [@packlify/client](#packlifyclient)
   - [@packlify/config-build](#packlifyconfig-build)
   - [@packlify/config-format](#packlifyconfig-format)
+  - [@packlify/mocks](#packlifymocks)
+  - @packlify/testing (coming soon)
+  - @packlify/performance (coming soon)
+  - @packlify/analytics (coming soon)
+  - @packlify/monitoring (coming soon)
   - [eslint-config-packlify](#eslint-config-packlify)
   - [packlify-start-app](#packlify-start-app)
 - [Contact](#contact)
@@ -79,6 +84,11 @@ This package includes functions for setting up:
 #### Bin files:
 - `packlify-format-check`: Runs Prettier checks (only check).
 - `packlify-format-write`: Runs Prettier checks and fix errors.
+
+### [@packlify/config-format](https://github.com/shopinpack/packlify-web/tree/main/packages/mocks)
+This package includes functions for setting up:
+- `mocks-adapter`: Custom adapter to mock browser and server side requests into json files.
+- `mocks-middleware`: Custom middleware router to handle filesystem for creating and reading files.
  
 ### [eslint-config-packlify](https://github.com/shopinpack/packlify-web/tree/main/packages/eslint-config-packlify)
 This package includes functions for setting up:
