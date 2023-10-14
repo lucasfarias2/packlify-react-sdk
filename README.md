@@ -85,7 +85,7 @@ This package includes functions for setting up:
 - `packlify-format-check`: Runs Prettier checks (only check).
 - `packlify-format-write`: Runs Prettier checks and fix errors.
 
-### [@packlify/config-format](https://github.com/shopinpack/packlify-web/tree/main/packages/mocks)
+### [@packlify/mocks](https://github.com/shopinpack/packlify-web/tree/main/packages/mocks)
 This package includes functions for setting up:
 - `mocks-adapter`: Custom adapter to mock browser and server side requests into json files.
 - `mocks-middleware`: Custom middleware router to handle filesystem for creating and reading files.

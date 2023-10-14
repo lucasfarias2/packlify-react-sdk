@@ -1,2 +1,2 @@
-export * from './hydrate';
-export type * from './types';
+export * from './hydrate.js';
+export type * from './types.js';

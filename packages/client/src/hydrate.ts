@@ -1,7 +1,7 @@
 import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { IWindow } from './types';
+import { IWindow } from './types.js';
 
 declare const window: IWindow;
 
