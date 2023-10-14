@@ -11,42 +11,57 @@ const projectNamePattern = /^(?:@(?:[a-z0-9-*~][a-z0-9-*._~]*)?\/)?[a-z0-9-~][a-
 console.log(chalk.bold.hex('#0e7490')('Packlify: ') + chalk.bold.hex('#be123c')('start-app'));
 
 const startApp = () => {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
+  // Extract project name from command line arguments
+  const cliArgs = process.argv.slice(2); // The first two elements are 'node' and the script name
+  const inlineProjectName = cliArgs[0];
 
-  rl.question(`Enter a ${chalk.bold('name')} for the project: `, projectName => {
-    if (!projectNamePattern.test(projectName)) {
+  if (inlineProjectName) {
+    if (!projectNamePattern.test(inlineProjectName)) {
       console.log('Invalid project name! It should match the package.json naming conventions.');
-      rl.close();
+      return;
     }
+    createAndInitializeProject(inlineProjectName);
+  } else {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+    });
 
-    if (projectName) {
-      if (!fs.existsSync(projectName)) {
-        fs.mkdirSync(projectName);
-      }
-
-      try {
-        createPackageJson(projectName);
-        createReadme(projectName);
-        copyFiles(projectName);
-      } catch (err) {
-        console.log('Error generating project:', err);
+    rl.question(`Enter a ${chalk.bold('name')} for the project: `, projectName => {
+      if (!projectNamePattern.test(projectName)) {
+        console.log('Invalid project name! It should match the package.json naming conventions.');
         rl.close();
+        return;
       }
+      createAndInitializeProject(projectName);
+      rl.close();
+    });
+  }
+};
 
-      console.log(`Project ${projectName} has been created!`);
-      console.log(`Please run ${chalk.bold('cd ' + projectName)} to enter the project directory.`);
-      console.log(`Then run ${chalk.bold('npm install')} to install the dependencies.`);
-      console.log(`Finally run ${chalk.bold('npm run dev')} to start the development server.`);
-      console.log('Happy coding!');
-    } else {
-      console.log('Please provide a valid project name!');
+const createAndInitializeProject = (projectName: string) => {
+  if (projectName) {
+    if (!fs.existsSync(projectName)) {
+      fs.mkdirSync(projectName);
     }
 
-    rl.close();
-  });
+    try {
+      createPackageJson(projectName);
+      createReadme(projectName);
+      copyFiles(projectName);
+    } catch (err) {
+      console.log('Error generating project:', err);
+      return;
+    }
+
+    console.log(`Project ${projectName} has been created!`);
+    console.log(`Please run ${chalk.bold('cd ' + projectName)} to enter the project directory.`);
+    console.log(`Then run ${chalk.bold('npm install')} to install the dependencies.`);
+    console.log(`Finally run ${chalk.bold('npm run dev')} to start the development server.`);
+    console.log('Happy coding!');
+  } else {
+    console.log('Please provide a valid project name!');
+  }
 };
 
 startApp();
