@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-namespace */
 import type { ViteDevServer } from 'vite';
 import type { Express, Response as ExpressResponse } from 'express';
@@ -6,12 +7,15 @@ declare global {
   namespace Express {
     interface Request {
       device?: IDevice;
+      user: any;
     }
 
     interface Response {
       renderView: (pageName: string, props?: unknown) => void;
       isProd?: boolean;
       vite: ViteDevServer;
+      queries: Record<string, any>;
+      loadQueryKeys: (queryKeys: string[]) => Response;
     }
   }
 }
